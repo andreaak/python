@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Hello!</title>
+</head>
+<body>
+
+{% if name %}
+    <h2>Hello, {{ name }}!</h2>
+{% endif %}
+
+<form action="/hello/" method="post">
+    <label for="name">Enter your name:</label>
+    <input type="text" name="name" id="name">
+    <button>OK</button>
+</form>
+
+</body>
+</html>
